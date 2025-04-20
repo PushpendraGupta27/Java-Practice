@@ -30,8 +30,6 @@
 29. Check if a number is a Harshad number  
 30. Find the Abundant numbers in a range  
 
----
-
 ## Pattern Printing (Easy to Medium)  
 1. Print a right-angled triangle pattern using stars  
 2. Print an inverted right-angled triangle pattern  
@@ -59,8 +57,6 @@
 24. Print a pattern of decreasing numbers in a triangle  
 25. Print a chessboard pattern  
 
----
-
 ## Arrays (Easy Basics)  
 1. Find the sum of all elements in an array  
 2. Find the average of all elements in an array  
@@ -70,10 +66,8 @@
 6. Copy elements of one array into another array  
 7. Check if an array is sorted in ascending order  
 8. Count the number of even and odd elements in an array  
-9. Separate odd and even integers in an array  
+9. Separate odd and even integers in an array(separates the even and odd numbers into two different arrays)
 10. Find the range of an array (difference between max and min)  
-
----
 
 ## Arrays (Easy to Medium Transition)  
 11. Find the median of an array  
@@ -86,8 +80,6 @@
 18. Find the product of all elements in an array  
 19. Remove duplicates from an array  
 
----
-
 ## Arrays (Medium Array Operations)  
 20. Merge two sorted arrays  
 21. Rotate an array to the right by k steps  
@@ -98,8 +90,6 @@
 26. Move all zeros to the end of the array  
 27. Find the union of two arrays  
 28. Find all duplicate elements in an array  
-
----
 
 ## Arrays (Advanced Medium)  
 29. Find the subarray with the largest sum (Kadane’s Algo)  
@@ -113,8 +103,6 @@
 37. Find the longest subarray with equal 0s and 1s  
 38. Find three elements whose sum equals a target  
 
----
-
 ## Arrays (Hard Array Challenges)  
 39. Find the maximum product subarray  
 40. Maximum sum of i * arr[i] among all rotations  
@@ -127,8 +115,6 @@
 47. All unique combinations summing to target  
 48. Four elements summing to a value  
 
----
-
 ## Arrays (Hard & Advanced)  
 49. Sort array with only 0s, 1s, and 2s  
 50. Merge overlapping intervals  
@@ -139,8 +125,6 @@
 55. Smallest window with all elements of another array  
 56. Rearrange positive and negative using constant space  
 57. Check if subarray with sum 0 exists  
-
----
 
 ## Searching & Sorting Algorithms
 
@@ -170,8 +154,6 @@
 76. Find the square root of a number using binary search  
 77. Search in a row-wise and column-wise sorted matrix  
 
----
-
 ## Strings (Basic Operations)
 
 131. Count the number of vowels and consonants in a string  
@@ -200,8 +182,6 @@
 154. Print all permutations of a string  
 155. Print all combinations of a string  
 
----
-
 ## Strings (Intermediate Operations)  
 156. Check if a string follows the pattern of another string  
 157. Find the longest palindromic substring  
@@ -223,8 +203,6 @@
 173. Count distinct subsequences of a string  
 174. Find the longest substring without repeating characters  
 175. Implement a function to convert a string to camelCase  
-
----
 
 ## Recursion Problems  
 176. Calculate factorial using recursion  
@@ -253,8 +231,6 @@
 199. Find all possible words from a phone keypad number  
 200. Generate all possible balanced parentheses of given length  
 
----
-
 ## Matrix Operations  
 221. Print a 2D matrix in spiral order  
 222. Find the transpose of a matrix  
@@ -280,8 +256,4 @@
 242. Check if a matrix can be converted to another matrix by row and column exchanges  
 243. Count zeros in a sorted matrix  
 244. Find the number of islands in a matrix (connected 1s)  
-245. Find the shortest path in a maze  
-
----
-
-Let me know if you need further adjustments or additional details!
+245. Find the shortest path in a maze
