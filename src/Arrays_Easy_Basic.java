@@ -3,31 +3,30 @@ import java.util.Scanner;
 
 public class Arrays_Easy_Basic {
     private static final int[] array = {4, 6, 9, 5, 2, 3};
-    private static final int[] arr = {1, 2, 2, 3, 4, 4, 5};
 
     static Scanner scn = new Scanner(System.in);
 
     private static void sumAndAvg() {
         int sum = 0;
-        for (int i = 0; i < array.length - 1; i++) {
-            sum += array[i];
+        for (int j : array) {
+            sum += j;
         }
         // Find the sum of all elements in an array
         System.out.println("Sum of elements: " + sum);
         // Find the average of all elements in an array
-        System.out.println("Average of elements: " + (sum / array.length - 1));
+        System.out.println("Average of elements: " + (sum / array.length));
     }
 
     private static void minAndMax() {
         // Find the maximum and minimum elements in an array
         int min = array[0];
         int max = array[0];
-        for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] < min) {
-                min = array[i];
+        for (int j : array) {
+            if (j < min) {
+                min = j;
             }
-            if (array[i] > max) {
-                max = array[i];
+            if (j > max) {
+                max = j;
             }
         }
         System.out.println("Maximum element: " + max);
@@ -39,7 +38,7 @@ public class Arrays_Easy_Basic {
     private static void reverse() {
         // Reverse an array
         int temp;
-        for (int i = 0; i < (array.length - 1) / 2; i++) {
+        for (int i = 0; i < array.length / 2; i++) {
             temp = array[i];
             array[i] = array[array.length - 1 - i];
             array[array.length - 1 - i] = temp;
@@ -54,7 +53,7 @@ public class Arrays_Easy_Basic {
         int num = scn.nextInt();
         int index = -1;
 
-        for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == num && index == -1) {
                 index = i;
             }
@@ -69,7 +68,7 @@ public class Arrays_Easy_Basic {
     private static void copyElements() {
         // Copy elements of one array into another array
         int[] newArr = new int[array.length];
-        for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length; i++) {
             newArr[i] = array[i];
         }
         System.out.println("copy array: " + Arrays.toString(newArr));
@@ -81,6 +80,7 @@ public class Arrays_Easy_Basic {
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
                 isSorted = false;
+                break;
             }
         }
         if (isSorted) {
@@ -94,8 +94,8 @@ public class Arrays_Easy_Basic {
         // Count the number of even and odd elements in an array
         int oddCount = 0;
         int evenCount = 0;
-        for (int i = 0; i < array.length - 1; i++) {
-            if (array[i] % 2 == 0) {
+        for (int j : array) {
+            if (j % 2 == 0) {
                 evenCount += 1;
             } else {
                 oddCount += 1;
@@ -109,7 +109,7 @@ public class Arrays_Easy_Basic {
         // Separate odd and even integers in an array(separates the even and odd numbers into two different arrays)
         int[] oddArray = new int[array.length];
         int[] evenArray = new int[array.length];
-        for (int i = 0; i < array.length - 1; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
                 evenArray[i] = array[i];
             } else {
@@ -119,7 +119,19 @@ public class Arrays_Easy_Basic {
         System.out.println("Even element array is:" + Arrays.toString(evenArray));
         System.out.println("odd element array is:" + Arrays.toString(oddArray));
     }
-    /*private static void questions() {
+
+    public static void main(String[] args) {
+        sumAndAvg();
+        minAndMax();
+        reverse();
+        searchElement();
+        copyElements();
+        checkSorted();
+        countEvenAndOdd();
+        separateEvenAndOdd();
+    }
+}
+/*private static void questions() {
 
         Set<Integer> set = new HashSet<>();
     }
@@ -138,15 +150,3 @@ public class Arrays_Easy_Basic {
     // Optional: Close the scanner
         scn.close();
 }*/
-
-    public static void main(String[] args) {
-        sumAndAvg();
-        minAndMax();
-        reverse();
-        searchElement();
-        copyElements();
-        checkSorted();
-        countEvenAndOdd();
-        separateEvenAndOdd();
-    }
-}
