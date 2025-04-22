@@ -131,22 +131,3 @@ public class Arrays_Easy_Basic {
         separateEvenAndOdd();
     }
 }
-/*private static void questions() {
-
-        Set<Integer> set = new HashSet<>();
-    }
-
-    // Remove duplicates from an array.
-        for(
-    int i = 0;
-    i<arr.length -1;i++)
-
-    {
-        set.add(arr[i]);
-    }
-
-        System.out.println("Removed duplicates array: "+set);
-
-    // Optional: Close the scanner
-        scn.close();
-}*/
