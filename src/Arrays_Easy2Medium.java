@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -114,15 +115,17 @@ public class Arrays_Easy2Medium {
                 unique.add(arr[i]);
             }
         }
-        System.out.println("After removed duplicates from an array: " + unique);
+        // Convert the ArrayList back to an array
+        Integer[] array = unique.toArray(new Integer[0]);
+        System.out.println("After removed duplicates from an array: " + Arrays.toString(array));
 
         // Way-2
         Set<Integer> set = new HashSet<>();
         for (int j : arr) {
             set.add(j);
         }
-
-        System.out.println("After removed duplicates from an array: " + set);
+        Integer[] newArr = set.toArray(new Integer[0]);
+        System.out.println("After removed duplicates from an array: " + Arrays.toString(newArr));
     }
 
     public static void main(String[] args) {
