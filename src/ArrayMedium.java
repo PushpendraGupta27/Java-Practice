@@ -34,6 +34,11 @@ public class ArrayMedium {
         System.out.println(Arrays.toString(mergedArray));
     }
 
+    private static void que23() {
+        // Find the missing number in an array containing 1 to n
+
+    }
+
     public static void main(String[] args) {
         que20();
     }
