@@ -43,7 +43,6 @@ public class Arrays_Easy_Basic {
             array[i] = array[array.length - 1 - i];
             array[array.length - 1 - i] = temp;
         }
-
         System.out.println("Reversed array: " + Arrays.toString(array));
     }
 
