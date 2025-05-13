@@ -2,7 +2,7 @@ public class LongestMaxSubString {
     public static void main(String[] args) {
         String s = "1111122235666789";
 
-        char maxChar = s.charAt(0); // the digit with longest repeat
+        char maxChar = s.charAt(0); // the digit with Longest repeat
         int maxLen = 1;
 
         char currentChar = s.charAt(0); // tracking current group
